@@ -2,7 +2,7 @@
 
 //operadores
 
-var n1 = 2;
+var n1 = 5;
 var n2 = 3;
 var suma = n1 + n2;
 var resta = n1 - n2;
