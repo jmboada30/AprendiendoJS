@@ -52,8 +52,8 @@
  var buscar = parseInt(prompt('Cual desea buscar',0));
  var posicion = nros.findIndex(posi => posi ==buscar);
 
- if(posicion && posicion > -1){
-    document.write(`<hr> <h2>ENCONTRADO: Su posición es ${posicion}</h2> <hr> `);
+ if(posicion > -1){
+    document.write(`<hr> <h2>Ud. Busco: el ${buscar}. Resultado: ENCONTRADO.  Su posición es ${posicion}.</h2> <hr> `);
  }else{
     document.write(`<hr> <h2>El valor que busco es el ${buscar}. NO ENCONTRADO.</h2> <hr> `);
  }
