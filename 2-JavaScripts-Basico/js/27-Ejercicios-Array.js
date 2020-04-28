@@ -57,5 +57,3 @@
  }else{
     document.write(`<hr> <h2>El valor que busco es el ${buscar}. NO ENCONTRADO.</h2> <hr> `);
  }
- 
- 

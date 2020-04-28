@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DOM, Eventos y Funciones</title>
+    <script src="./js/32-Ejercicio-DOM.js"></script>
+    <style>
+        *,*::after,*::before{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 250px;
+            float: left;
+            margin: 20px;
+        }
+
+        .dashed{
+            border: 2px dashed black;
+            padding: 5px;
+        }
+
+        #submit{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. formulario con Nombre, Apellido y Edad
+        2. Boton enviar formulario: evento Sumit
+        3. Mostrar datos por Pantalla
+        4. Validacion del Formulario
+     -->
+    <h1>Ejercicio DOM, Eventos y Funciones</h1>
+    <form method="POST" id="form" onsubmit="return false;">
+
+        <fieldset class="box">
+
+            <legend>Sus datos</legend>
+            <div>
+                <label>Nombre <br>
+                    <!-- Cada dato puede tener un formato predefinido -->
+                    <input type="text" name="name" id="name" placeholder="Su Nombre">
+                </label>
+                <span id="error_nombre"></span>
+            </div>
+            
+            <div>
+                <label>Apellido <br>
+                    <!-- Cada dato puede tener un formato predefinido -->
+                    <input type="text" name="lastname" id="lastname" placeholder="Su Apellido">
+                </label>
+                <span id="error_apellido"></span>
+            </div>
+
+            <div>
+                <label>
+                   Edad  <br>
+                    <input type="number" name="age" id="age" value="18">
+                </label>
+                <span id="error_edad"></span>
+            </div>
+            
+        <input type="submit" value="Enviar" id="submit">
+        </fieldset>
+    </form>
+
+    <div class="box dashed">
+        <h3>Info del Usuario</h3>
+        <hr>
+        <p id="p_nombre">Nombre: <span></span></p>
+        <p id="p_apellido">Apellido: <span></span></p>
+        <p id="p_edad">Edad: <span></span></p>
+    </div>
+    
+</body>
+</html>
