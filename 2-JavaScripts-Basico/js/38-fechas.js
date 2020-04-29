@@ -28,6 +28,6 @@ console.log(textofecha);
 // BONUS Matematicas con JS buscar en GOOGLE Math y sale toooodo
 // Ejemplo:
 
-console.log(Math.ceil(Math.random()*10000));
+console.log(Math.ceil(Math.random() * 10000));
 // random para un nro aleatorio
 // ceil para redondear y quitar los decimales
